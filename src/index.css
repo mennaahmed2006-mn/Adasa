@@ -1372,3 +1372,66 @@ img { max-width: 100%; display: block; }
 }
 
 
+/* ---------- صفحة 404 (حطها في آخر style.css) ---------- */
+
+.notfound {
+    min-height: calc(100vh - var(--nav-h));
+    display: flex;
+    align-items: center;
+}
+
+.notfound .container-xl {
+    width: 100%;
+}
+
+.notfound__num {
+    font-size: clamp(6rem, 18vw, 12rem);
+    font-weight: 800;
+    line-height: 1;
+    background: var(--grad-warm);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.notfound__face {
+    position: relative;
+    width: 112px;
+    height: 112px;
+    margin: 1.5rem auto;
+    display: grid;
+    place-items: center;
+    background: var(--orange-soft);
+    border: 1px solid var(--orange-border);
+    border-radius: 50%;
+    color: var(--orange);
+    font-size: 3rem;
+}
+
+.notfound__dot {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.notfound__dot--orange {
+    top: -10px;
+    right: -18px;
+    width: 20px;
+    height: 20px;
+    background: var(--orange);
+}
+
+.notfound__dot--amber {
+    bottom: -4px;
+    left: -14px;
+    width: 14px;
+    height: 14px;
+    background: var(--amber);
+    opacity: 0.6;
+}
+
+.notfound__title {
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}

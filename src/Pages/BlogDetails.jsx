@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import data from "../Data/posts.json";
+import NotFound from "./NotFound";
 
 function parseContent(text) {
     var parts = text.split("\n\n");
@@ -37,10 +38,7 @@ export default function BlogDetails() {
 
     if (!post) {
         return (
-            <main className="section text-center">
-                <h2>المقال غير موجود</h2>
-                <Link to="/blog" className="btn-brand mt-3">العودة للمدونة</Link>
-            </main>
+            <NotFound />
         );
     }
 
